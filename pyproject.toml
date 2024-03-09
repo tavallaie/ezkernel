@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "ezkernel"
+version = "0.1.0"
+description = "A simple CLI wrapper to manage Jupyter kernels"
+authors = ["Ali Tavallaie <a.tavallaie@gmail.com>"]
+license = "MIT"
+readme = "README.rst"
+
+[tool.poetry.urls]
+"Homepage" = "https://github.com/tavallaie/ezkernel"
+"Repository" = "https://github.com/tavallaie/ezkernel"
+"Documentation" = "https://github.com/tavallaie/ezkernel"
+
+[tool.poetry.scripts]
+ezkernel = "ezkernel.cli:app"
+[tool.poetry.dependencies]
+python = "^3.10"
+typer = {extras = ["all"], version = "^0.9.0"}
+ipykernel = "^6.29.3"
+jupyter-core = "^5.7.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
